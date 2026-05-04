@@ -28,6 +28,8 @@ jobs:
     with:
       pages: "./manual/target/generated-docs/"
       publish_sarif: true
+      sonar_project_key: "jqassistant_jqassistant"
+      sonar_organization: "jqassistant"
     secrets:
       ossrh_username: ${{ secrets.OSSRH_USERNAME }}
       ossrh_password: ${{ secrets.OSSRH_PASSWORD }}
