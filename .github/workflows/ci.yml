@@ -18,6 +18,8 @@ on:
 concurrency:
   group: build-java-${{ github.ref }}
   cancel-in-progress: true
+permissions: 
+  contents: write
 
 jobs:
   build:
