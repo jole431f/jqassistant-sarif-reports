@@ -24,6 +24,7 @@ import org.apache.maven.reporting.MavenReportException;
  * Generates a HTML reports based on analysis results.
  */
 @Mojo(name = "report", defaultPhase = LifecyclePhase.SITE)
+@ToBeRemovedInVersion(major = 1, minor = 9) 
 public class ReportMojo extends AbstractMavenReport {
 
     /**
