@@ -9,6 +9,7 @@ import java.util.Queue;
 
 import com.buschmais.jqassistant.core.report.api.model.Language;
 import com.buschmais.jqassistant.core.report.api.model.LanguageElement;
+import com.buschmais.jqassistant.core.shared.annotation.ToBeRemovedInVersion;
 import com.buschmais.xo.api.CompositeObject;
 import com.buschmais.xo.api.metadata.reflection.AnnotatedType;
 
@@ -33,6 +34,7 @@ public final class LanguageHelper {
      *     The descriptor.
      * @return The resolved {@link LanguageElement}
      */
+    @ToBeRemovedInVersion(major = 5, minor = 3)
     public static Optional<LanguageElement> getLanguageElement(CompositeObject descriptor) {
         Queue<Class<?>> queue = new LinkedList<>();
         Class<?>[] descriptorTypes = descriptor.getClass()
